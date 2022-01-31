@@ -19,7 +19,7 @@ class Game # Game class has all these abilities
   end
 
   def report_life
-    puts "Life Remaining ==> P1: #{@players[0].life}/3  P2:#{@players[1].life}/3"
+    puts "Life Remaining ==> P1: #{@players[0].lives}/3  P2:#{@players[1].lives}/3"
   end
 
   def change_player
