@@ -7,7 +7,7 @@ class Question
     @answer = nil # answer is initially nothing
   end
 
-  def test_question
+  def basic_question
     num = Random.new # Built into ruby - Random.new()
 
     first_num = num.rand(100)

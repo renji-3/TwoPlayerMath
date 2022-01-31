@@ -11,6 +11,7 @@ class Game # Game class has all these abilities
   end
 
   def subtract_life
+    puts "come on man..."
     @current_player.lives -= 1
     if @current_player.lives == 0
       puts "#{@current_player.name}, you lose!" 
