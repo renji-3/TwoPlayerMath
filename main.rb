@@ -18,10 +18,13 @@ while game.players[0].lives > 0 and game.players[1].lives > 0 do #while alive, p
   puts "~~~New Round~~~"
   question = Question.new
   puts "#{game.current_player.name}'s Answer: #{question.basic_question}" #player naeeds game. since current player is not defined within the scope like question is
-  input = gets.chomp.to_s
   answer = question.answer
+  puts "=== #{answer} ===="
+  input = gets.chomp.to_i
 
-  if (input != answer)
+  if (input == answer)
+    puts "Noish"
+  elsif (input != answer)
     game.subtract_life
   end
 

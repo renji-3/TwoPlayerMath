@@ -1,7 +1,7 @@
 require './game'
 
 class Question 
-  attr_accessor :answer, :test_question
+  attr_accessor :answer, :basic_question
 
   def initialize 
     @answer = nil # answer is initially nothing
